@@ -1,4 +1,8 @@
 package com.eventbooking.venue;
 
-public class VenueResponse {
+public record VenueResponse(Long id, String name, String address, String city, int capacity) {
+
+    public static VenueResponse from(Venue v) {
+        return new VenueResponse(v.getId(), v.getName(), v.getAddress(), v.getCity(), v.getCapacity());
+    }
 }

@@ -1,0 +1,34 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f5f6f8; color: #1d2330; }
+main { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+h1 { margin: 0 0 1rem; font-size: 1.4rem; }
+h2 { margin: 0 0 .75rem; font-size: 1.05rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+.card { background: #fff; border: 1px solid #e2e5ea; border-radius: 8px; padding: 1rem; }
+ul.list { list-style: none; margin: 0 0 1rem; padding: 0; }
+ul.list li { padding: .45rem .6rem; border-radius: 6px; cursor: pointer; display: flex; justify-content: space-between; gap: .5rem; }
+ul.list li:hover { background: #f0f2f5; }
+ul.list li.selected { background: #e5edff; }
+.muted { color: #6b7385; font-size: .85rem; }
+form { display: grid; gap: .5rem; grid-template-columns: minmax(0, 1fr); }
+.row { display: flex; gap: .5rem; }
+.row > * { flex: 1; min-width: 0; }
+input, textarea, select, button { font: inherit; padding: .4rem .55rem; border: 1px solid #cfd4dc; border-radius: 6px; }
+button { background: #1f4fd8; color: #fff; border-color: #1f4fd8; cursor: pointer; }
+button.secondary { background: #fff; color: #1d2330; border-color: #cfd4dc; }
+button:disabled { opacity: .5; cursor: default; }
+.error { background: #fef3f2; color: #b42318; border: 1px solid #fecdca; padding: .5rem .7rem; border-radius: 6px; font-size: .9rem; }
+.error ul { margin: .3rem 0 0; padding-left: 1.1rem; }
+.badge { display: inline-block; padding: .25rem .6rem; border-radius: 999px; font-size: .85rem; }
+.badge.free { background: #ecfdf3; color: #067647; }
+.badge.busy { background: #fef3f2; color: #b42318; }
+.timeline { position: relative; height: 28px; background: #eef1f5; border-radius: 6px; overflow: hidden; margin: .25rem 0 .1rem; }
+.timeline .slot { position: absolute; top: 0; bottom: 0; background: #f79009; opacity: .85; }
+.timeline .pick { position: absolute; top: 0; bottom: 0; border: 2px solid #1f4fd8; background: rgba(31, 79, 216, .15); }
+.hours { display: flex; justify-content: space-between; font-size: .7rem; color: #6b7385; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th, td { text-align: left; padding: .45rem .5rem; border-bottom: 1px solid #eceff3; vertical-align: top; }
+th { color: #6b7385; font-weight: 600; font-size: .8rem; }
+input, textarea, select { width: 100%; min-width: 0; }
+.card { min-width: 0; }
+label { display: grid; gap: .2rem; font-size: .85rem; color: #6b7385; }
